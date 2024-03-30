@@ -19,6 +19,10 @@ export default function Login() {
   function handelogin(values){
     const user=JSON.parse(localStorage.getItem('users'))
     if(user.email===values.email&&user.password==values.password){
+      setuserauth({
+        isauth:true,
+        user:data.data[0]
+      })
       navigate('/')
       axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
             if(data.data.length){
