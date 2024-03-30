@@ -102,6 +102,12 @@
       "email": "mayar2@gmail.com",
       "password": "1234",
       "id": 19
+    },
+    {
+      "name": "Lamis",
+      "email": "lamis@gmail.com",
+      "password": "123",
+      "id": 20
     }
   ],
   "books": [
