@@ -1,0 +1,83 @@
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .right {
+        width: 30%;
+        height: 100vh;
+        background-image: url('../../../../Assetss/home-hero-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(237, 201, 188);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        h2{
+            width: 40%;
+            p{
+                width: 100%;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 80%;
+                margin-top: 5rem;
+                margin-left: 3rem;
+            }
+
+        }
+
+        h1 {
+            width: 40%;
+            color: hsl(19.05deg 86.3% 57.06%);
+            font-weight: bolder;
+            font-size: 3rem;
+            text-shadow: 5px 10px 5px #ff00004d;            
+            @media only screen and (max-width: 768px) {
+                width: 70%;
+    
+            }
+        }
+
+        p {
+            width: 40%;
+            @media only screen and (max-width: 768px) {
+                width: 70%;
+
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding-top: 25rem;
+
+        }
+    }
+
+    .img1 {
+        width: 25rem;
+        height: 30rem;
+        position: absolute;
+        top: 10rem;
+        right: 15rem;
+        opacity: 0.8;
+        border: 2px solid white;
+        // box-shadow: 5px 5px #c83a06, 10px 10px #ef7231, 15px 15px #fa9746;
+        box-shadow: 5px 5px 8px 5px hsla(19, 86%, 57%, 0.697);
+        @media only screen and (max-width: 768px) {
+            right: 1rem;
+            top: 4rem;
+
+        }
+        
+    }
+
+}

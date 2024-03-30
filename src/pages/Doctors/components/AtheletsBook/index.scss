@@ -1,0 +1,32 @@
+.booking {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h3{
+        font-weight: 700;
+        color: rgb(21 35 68);
+    }
+    .books{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .bookingareeaa {
+    
+            border: 1px solid rgba(255, 255, 255, 0.666);
+            width: 20rem;
+            padding: 5px;
+            font-size: small;
+            border-radius: 5px;
+            background-color: rgba(217, 206, 171, 0.41);
+            color: orangered;
+
+        }
+    }
+
+}

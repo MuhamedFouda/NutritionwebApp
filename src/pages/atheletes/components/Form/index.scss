@@ -1,0 +1,88 @@
+.forrmm {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    // background-image: url('../../../../assets/background.png');
+    background-color: rgb(245, 220, 187);
+    padding-top: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        margin-bottom: 1rem;
+
+    }
+    p{
+        color: rgba(21, 35, 68, 1);
+        font-weight: 400;
+        letter-spacing: 2px;
+        width: 60%;
+        text-align: center;
+        @media only screen and (max-width: 768px) {
+            width: 90%;
+        }
+
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        li{
+            color: rgba(197,64,39,1);
+
+        }
+    }
+    h3{
+        color: rgba(235, 77, 15, 0.747);
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+
+        .forrm {
+            width: 40%;
+            height: auto;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            // margin-left: 30%;
+            background-image: url('../../../../assets/man-running-with-white-background-black-shorts-that-says-nike-it_873925-12013.avif');
+            background-color: transparent;
+            background-size: cover;
+            background-position:7rem;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-color: white;
+            border: 3px solid rgb(240, 233, 230);
+            
+    
+            @media only screen and (max-width: 768px) {
+                width: 90%;
+                background-position:2rem;
+    
+            }
+            .form-control{
+                width:130%;
+                // background-color: rgba(192, 75, 29, 0.288);            
+            }
+    
+            label{
+                color:rgba(21, 35, 68, 1);
+                width: 100%;
+    
+            }
+            button{
+                background-color: rgba(249, 166, 65, 0.881);;
+                color: white;
+            }
+        }
+    
+
+}

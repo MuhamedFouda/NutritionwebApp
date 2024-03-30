@@ -1,0 +1,68 @@
+.partt2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    background-color: rgba(237, 201, 188, 0.551);
+    position: relative;
+    
+    @media only screen and (max-width:769px) {
+        height: auto;
+        gap: 0rem;
+        padding-top: 1rem;
+
+    }
+
+    .text {
+        width: 45%;
+        line-height: 1.5rem;
+        color: rgb(2, 23, 70);
+        p {
+            font-size: 1rem;
+            color: rgba(197,64,39,1);
+            text-align: center;
+            font-weight: 600;
+        }
+        li{
+            color: rgba(197,64,39,1);
+
+        }
+
+        @media only screen and (max-width:769px) {
+            width: 100%;
+            margin: 0 5px;
+        }
+    }
+
+    .photo {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 48%;
+            height: 20vh;
+            @media only screen and (max-width:769px) {
+                width: 100%;
+                height: 30vh;
+
+        
+            }
+        }
+
+        @media only screen and (max-width:769px) {
+            width: 100%;
+            margin: 0 5px;
+
+        }
+    }
+}

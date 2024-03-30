@@ -1,0 +1,21 @@
+.part1{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2rem;
+
+    p{
+        font-size: 2rem;
+        z-index: 2;
+        font-weight: bolder;
+        color: #0c5e91;
+        @media only screen and (max-width: 768px) {
+            font-size:20px;
+         }
+    }
+}

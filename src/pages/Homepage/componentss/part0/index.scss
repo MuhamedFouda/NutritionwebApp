@@ -1,0 +1,57 @@
+.part3{
+    width: 100%;
+    height: 70vh;
+    margin-top: 2rem;
+    background-image: url('../../../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    .part{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 7rem ;
+        @media only screen and (max-width: 768px) {
+            margin: 0 1.5rem ;
+        }
+
+        .imge{
+            width: 40%;
+            height: 100%;
+            border-left: 1rem solid rgb(16, 91, 204);
+            img{
+                height: 100%;
+                width: 90%;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+        .content{
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            ul{
+                line-height: 3rem;
+                li{
+                    color: black;
+                    font-weight: bold;
+                    background-color: #0dcaf0;
+                    width:fit-content;
+                    margin: 2px 0;
+                    padding: 0 5px;
+                }
+                @media only screen and (max-width: 768px) {
+                    line-height: 2rem;
+
+                }
+            }
+        }
+    }
+}
