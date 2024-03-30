@@ -6,13 +6,19 @@ import Registershema from '../../schemas/registershema'
 import './index.scss'
 
 export default function Register() {
+  
+  
+  
   const navigate=useNavigate()
   function handelregister(values){
     const newvalues={...values}
     delete newvalues.confirm_password
     axios.post('http://localhost:3000/Users', newvalues)
     navigate('/Login')
-  }
+    localStorage.setItem('users', JSON.stringify(newvalues));
+    }
+
+ 
 
   return (
     <div className='register'>
