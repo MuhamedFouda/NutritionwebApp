@@ -21,7 +21,7 @@ export default function Login() {
     if(user.email===values.email&&user.password==values.password){
       setuserauth({
         isauth:true,
-        user:data.data[0]
+        user:user
       })
       navigate('/')
       axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
