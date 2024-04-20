@@ -1,0 +1,68 @@
+.coverrr{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    .img{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        background-image: url('../../../../Assetss/8.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:50%;
+        border-radius: 10%;
+        opacity: 1.8;
+        box-shadow: 10px 5px 30px 10px rgb(245, 200, 141);
+        background-color: rgb(236 160 136);;
+
+        @media only screen and (max-width: 768px) {
+            box-shadow: 20px 0px 20px 0px rgb(245, 200, 141);
+            width: 100%;
+            height: 50%;
+            background-position:48.5% ;
+
+        }
+        .filtter{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(9, 9, 9, 0);
+            
+
+        }
+        }
+        .text{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background-color: rgb(252 242 236);
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                height: 50%;
+            }
+            p,h3{
+                color: rgba(21, 35, 68, 1);
+                width: 90%;
+                text-align: center;
+            }
+            h1{
+                font-weight: 900;
+                letter-spacing: 3px;
+                color: rgb(255, 70, 37);
+                text-shadow: 1px 1px 2px rgba(174, 92, 20, 0.056), 0 0 25px rgba(72, 52, 0, 0.323), 0 0 5px rgba(105, 72, 2, 0.619);
+                padding-bottom: 2rem;
+
+    
+            }
+            .animate__animated{
+                --animate-duration: 2s;
+              }
+        }
+    }

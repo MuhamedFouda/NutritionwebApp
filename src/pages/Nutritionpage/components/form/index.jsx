@@ -105,7 +105,7 @@ export default function Forrm() {
                         <label for="floatingTextarea">Choose your Pocket date </label><br />
                         <DatePicker
                             showTimeSelect
-                            minTime={new Date(0, 0, 0, 12, 30)}
+                            minTime={new Date(0, 0, 0, 15, 30)}
                             maxTime={new Date(0, 0, 0, 19, 0)}
                             selected={date}
                             filterDate={weekend}

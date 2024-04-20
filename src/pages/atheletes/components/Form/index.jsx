@@ -24,8 +24,8 @@ export default function Formm() {
     const navigate = useNavigate();
 
     function sprotdata(values) {
-
-        const newdata = { ...values, date }
+        const newdate= date;
+        const newdata = { ...values, date}
         axios.post('http://localhost:3000/athelets', newdata)
         toast.success("you pocket succesfully");
         navigate('/')
@@ -135,12 +135,12 @@ export default function Formm() {
                         <label for="floatingTextarea"> Choose your Pocket date </label><br />
                         <DatePicker
                             showTimeSelect
-                            minTime={new Date(0, 0, 0, 12, 30)}
-                            maxTime={new Date(0, 0, 0, 19, 0)}
+                            minTime={new Date(0, 0, 0, 12, 0)}
+                            maxTime={new Date(0, 0, 0, 15, 0)}
                             selected={date}
                             filterDate={weekend}
                             onChange={(date) => setDate(date)}
-                            dateFormat="MMMM d, yyyy h:mmaa"
+                            dateFormat="MMMM d, yyyy"
                         />
                     </div><br />
                     <button type="submit" className="btn btn-primary"> Submit</button>

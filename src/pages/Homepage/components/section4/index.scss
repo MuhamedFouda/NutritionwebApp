@@ -6,6 +6,9 @@
     // background-repeat: no-repeat;
     // background-size:cover;
     background-color: hsl(45.65deg 37.7% 76.08%);
+    @media only screen and (max-width: 768px) {
+        height: 80vh;
+    }
     .part{
         width: 90%;
         height: 100%;
@@ -17,20 +20,29 @@
         align-content: center;
         margin: 0 7rem ;
         @media only screen and (max-width: 768px) {
-            margin: 0 1.5rem ;
+            height: 60%;
+            margin: 5rem 2rem 0rem 2rem ;
+            gap: 2rem;
+
         }
 
         .imge{
             width: 40%;
             height: 100%;
             border-left: 1rem solid hsla(19, 86%, 57%, 0.697);
-            
+            @media only screen and (max-width: 768px) {
+                height: 90%;
+                width: 90%;
+                border-left: 1rem solid hsla(19, 86%, 57%, 0.385);
+
+            }
             img{
                 height: 100%;
                 width: 90%;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 box-shadow: 5px 5px 8px 5px hsla(19, 86%, 57%, 0.697);
+
             }
         }
         .content{
@@ -58,6 +70,10 @@
                     line-height: 2rem;
 
                 }
+            }
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+
             }
         }
     }

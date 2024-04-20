@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./index.scss"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -12,6 +12,7 @@ import $loader from "../../atoms/loader";
 export default function Header() {
   const[isAdmin]=useRecoilState($isAdmin)
   const [userauth] = useRecoilState($isauth)
+  const navigate=useNavigate()
   const[loader,setloader]=useRecoilState($loader)
   function Setloader(){
    setloader(1)
@@ -19,19 +20,21 @@ export default function Header() {
     setloader(2)
    },3000)
   }
-
+function photoHome(){
+  navigate('/')
+}
   
   return (
     <div className="header">
       <div className="logo">
-        <img src={require('../../assets/Capture5.JPG')} style={{height:"3rem",width:"10rem"}}/>
+        <img src={require('../../assets/Capture5.JPG')} style={{height:"3rem",width:"10rem"}} onClick={photoHome}/>
       </div>
       <div className="links">
         {userauth.isauth?(<Link className="link" to={"/"} onClick={Setloader} > Home </Link>):""}
         {userauth.isauth?(<Link className="link" to={"/Athelets"} onClick={Setloader} > Athelets </Link>):""}
         {userauth.isauth?(<Link className="link" to={"/NutritionPage"} onClick={Setloader} > Nutrition </Link>):""}
-        {userauth.isauth?(<Link className="link" to={"/HealthCoach"} onClick={Setloader} > Health-c </Link>):""}
-        {isAdmin && userauth.isauth?(<Link className="link" to={"/Doctors"} onClick={Setloader}> Doctors </Link>):""}
+        {userauth.isauth?(<Link className="link" to={"/HealthCoach"} onClick={Setloader} > H-Coach </Link>):""}
+        {isAdmin && userauth.isauth?(<Link className="link" to={"/Doctors"} onClick={Setloader}> Booking </Link>):""}
         
       </div>
       {

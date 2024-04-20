@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 export default function Section5() {
     return (
         <div className='section5'>
-            <h2>If you book a session, what can you benefit from with us?</h2>
+            <h2> Book a session and benefit from our services </h2>
             <Swiper
             loop
                 spaceBetween={100}
@@ -19,19 +19,19 @@ export default function Section5() {
                 pagination
             >
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/نظام-غذائي-للتخسيس.jpg')} />
+                    <img src={require('../../../../assets/1.1.jpg')} />
                     <p>
                         A weekly diet plan suitable for each person
                     </p>
                 </SwiperSlide >
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/تطبيق-WaapLog-Last-Seen-Notificationط.webp')} />
+                    <img src={require('../../../../assets/1.2.jpg')} />
                     <p>
                         Daily follow-up on WhatsApp
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/zoom-con.jpg')} />
+                    <img src={require('../../../../assets/1.3.jpg')} />
                     <p>
                         Zoom Meeting is a monthly educational session in which we talk and discuss topics important to our health and weight loss journey
                     </p>                
@@ -43,25 +43,25 @@ export default function Section5() {
                     </p>                
                     </SwiperSlide>
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/0-monthly-meeting-thumb.webp')} />
+                    <img src={require('../../../../assets/1.5.png')} />
                     <p>
                     Zoom Meeting is a monthly educational session in which we talk and discuss topics important to our health and weight loss journey                    
                     </p>                
                     </SwiperSlide>
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/1.jpg')} />
+                    <img src={require('../../../../assets/1.6.webp')} />
                     <p>
                     Weekly healthy recipes that help us enjoy our lives without any deprivation                   
                      </p>                
                     </SwiperSlide>
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/Workout Schedule.jpg')} />
+                    <img src={require('../../../../assets/1.7.jpg')} />
                     <p>
                     Easy exercise system from home                     
                     </p>                
                     </SwiperSlide>
                 <SwiperSlide className='slide'>
-                    <img src={require('../../../../assets/follow-37564635.jpg')} />
+                    <img src={require('../../../../assets/1.8.jpg')} />
                     <p>
                         Follow up on tests, health status, and a vitamin plan suitable for each person individually
                     </p>

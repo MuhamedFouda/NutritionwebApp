@@ -1,5 +1,5 @@
 .register{
-    background-image: url('../../assets/background.png');
+    background-image: url('../../Assetss/Group-113.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -15,6 +15,16 @@
         position: absolute;
         top: 25%;
         left: 25%;
+        button {
+            background: radial-gradient(#f2b8b3, 67.5%, #ec6e60) padding-box, radial-gradient(#ececec, 35%, #ffffff 70%) 50% 0/80% 50% repeat-y;
+            color: #f2fdfeed;
+            border: solid white;
+            font-weight: 600;
+            &:hover{
+                color: #f2fdfe;
+            }
+
+        }
     }
 
 }
