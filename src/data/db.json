@@ -1,22 +1,10 @@
 {
   "users": [
     {
-      "name": "Muhamed",
-      "email": "memofouda59@gmail.com",
-      "password": "Aliaa23",
-      "id": 1
-    },
-    {
       "name": "Aliaa",
       "email": "aliaa@gmail.com",
       "password": "Aliaa29",
       "id": 2
-    },
-    {
-      "name": "Muhamed",
-      "email": "memofouda59@gmail.com",
-      "password": "Aliaa23",
-      "id": 3
     },
     {
       "name": "Ramzy",
@@ -32,82 +20,10 @@
       "role": "admin"
     },
     {
-      "name": "ramzy Fouda",
-      "email": "ramzy@gmail.com",
-      "password": "12345",
-      "id": 8
-    },
-    {
-      "name": "Aliaa",
-      "email": "aliaa@gmail.com",
-      "password": "12345",
-      "id": 9
-    },
-    {
-      "name": "emad",
-      "email": "emad@gmail.com",
-      "password": "123456",
-      "id": 10
-    },
-    {
-      "name": "Aliaa Emad",
-      "email": "aliaa23@gmail.com",
-      "password": "A23",
-      "id": 11
-    },
-    {
       "name": "Lamis",
       "email": "lamis@gmail.com",
-      "password": "1234",
-      "id": 12
-    },
-    {
-      "name": "Lamis",
-      "email": "lamis@gmail.com",
-      "password": "1234",
-      "id": 13
-    },
-    {
-      "name": "Lamis",
-      "email": "lamis@gmail.com",
-      "password": "1234",
-      "id": 14
-    },
-    {
-      "name": "Lamis",
-      "email": "lamis@gmail.com",
-      "password": "1234",
-      "id": 15
-    },
-    {
-      "name": "aliaa",
-      "email": "aliaa@gmail.com",
-      "password": "123",
-      "id": 16
-    },
-    {
-      "name": "Muhamed",
-      "email": "d@gmail.com",
-      "password": "1234",
-      "id": 17
-    },
-    {
-      "name": "mayar",
-      "email": "mayar@gmail.com",
-      "password": "1234",
-      "id": 18
-    },
-    {
-      "name": "mayar2",
-      "email": "mayar2@gmail.com",
-      "password": "1234",
-      "id": 19
-    },
-    {
-      "name": "Lamis",
-      "email": "lamis@gmail.com",
-      "password": "123",
-      "id": 20
+      "password": "L1234567",
+      "id": 21
     }
   ],
   "books": [

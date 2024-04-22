@@ -22,6 +22,7 @@ export default function Header() {
   }
 function photoHome(){
   navigate('/')
+  console.log(isAdmin)
 }
   
   return (
@@ -31,9 +32,9 @@ function photoHome(){
       </div>
       <div className="links">
         {userauth.isauth?(<Link className="link" to={"/"} onClick={Setloader} > Home </Link>):""}
-        {userauth.isauth?(<Link className="link" to={"/Athelets"} onClick={Setloader} > Athelets </Link>):""}
-        {userauth.isauth?(<Link className="link" to={"/NutritionPage"} onClick={Setloader} > Nutrition </Link>):""}
-        {userauth.isauth?(<Link className="link" to={"/HealthCoach"} onClick={Setloader} > H-Coach </Link>):""}
+        {userauth.isauth ?(<Link className="link" to={"/Athelets"} onClick={Setloader} > Athelets </Link>):""}
+        {userauth.isauth ?(<Link className="link" to={"/NutritionPage"} onClick={Setloader} > Nutrition </Link>):""}
+        {userauth.isauth ?(<Link className="link" to={"/HealthCoach"} onClick={Setloader} > H-Coach </Link>):""}
         {isAdmin && userauth.isauth?(<Link className="link" to={"/Doctors"} onClick={Setloader}> Booking </Link>):""}
         
       </div>

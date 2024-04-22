@@ -87,6 +87,7 @@ export default function Login() {
         setisAdmin(data.data[0].role)
         localStorage.setItem("userslogined", JSON.stringify(data.data))
         navigate('/')
+        console.log(data.data[0])
       } else {
         toast.error("Wrong Email or Password")
       }
