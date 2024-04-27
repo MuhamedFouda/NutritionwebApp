@@ -15,23 +15,24 @@ export default function Login() {
   const navigate = useNavigate()
   const [isAdmin, setisAdmin] = useRecoilState($isAdmin)
   const [userauth, setuserauth] = useRecoilState($isauth)
-
-  function handelogin(values) {
-    axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data) => {
-      if (data.data.length) {
-        toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
-        setuserauth({
-          isauth: true,
-          user: data.data[0]
-        })
-        setisAdmin(data.data[0].role)
-        localStorage.setItem("userslogined", JSON.stringify(data.data))
-        navigate('/')
-      } else {
-        toast.error("Wrong Email or Password")
-      }
-    })
-  }
+  
+  // function handelogin(values) {
+  //   axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data) => {
+  //     if (data.data.length) {
+  //       toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
+  //       setuserauth({
+  //         isauth: true,
+  //         user: data.data[0]
+  //       })
+  //       setisAdmin(data.data[0].role)
+  //       localStorage.setItem("userslogined", JSON.stringify(data.data[0]))
+  //       console.log(data.data[0])
+  //       navigate('/')
+  //     } else {
+  //       toast.error("Wrong Email or Password")
+  //     }
+  //   })
+  // }
 
 
   // function handelogin(values){
@@ -59,40 +60,40 @@ export default function Login() {
   //       }    }
 
 
+function handelogin(values){
+    axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
+      if(data.data.length){
+        toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
+        setuserauth({
+          isauth:true,
+          user:data.data[0]
+        })
+        setisAdmin(data.data[0].role)
+        localStorage.setItem("userslogined",JSON.stringify(data.data))
+        navigate('/')
+      }else{
+        toast.error("Wrong Email or Password")
+      }
+    })
+}
 
-  //   axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
-  //     if(data.data.length){
+  // function handelogin(values) {
+  //   axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data) => {
+  //     if (data.data.length) {
   //       toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
   //       setuserauth({
-  //         isauth:true,
-  //         user:data.data[0]
+  //         isauth: true,
+  //         user: data.data[0]
   //       })
   //       setisAdmin(data.data[0].role)
-  //       localStorage.setItem("userslogined",JSON.stringify(data.data))
+  //       localStorage.setItem("userslogined", JSON.stringify(data.data))
   //       navigate('/')
-  //     }else{
+  //       console.log(data.data[0])
+  //     } else {
   //       toast.error("Wrong Email or Password")
   //     }
   //   })
   // }
-
-  function handelogin(values) {
-    axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data) => {
-      if (data.data.length) {
-        toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
-        setuserauth({
-          isauth: true,
-          user: data.data[0]
-        })
-        setisAdmin(data.data[0].role)
-        localStorage.setItem("userslogined", JSON.stringify(data.data))
-        navigate('/')
-        console.log(data.data[0])
-      } else {
-        toast.error("Wrong Email or Password")
-      }
-    })
-  }
 
   return (
     <div className='loginn'>

@@ -49,7 +49,7 @@ export default function Formm() {
                 <li>Injury recovery time</li>
             </ul>
             </div>
-            <h3> So, please fill out the form </h3>
+            <h3> please fill out the form ,to Booking</h3>
             <Formik
                 initialValues={{
                     name: '',

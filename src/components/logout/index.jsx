@@ -3,8 +3,9 @@ import $isauth from '../../atoms/authatom'
 import './index.scss'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import { useState } from 'react'
 
-export default function LogOut() {
+export default function LogOut({mobileveiw ,setmobileveiw}) {
     const navigate = useNavigate()
     const [userauth, setuserauth] = useRecoilState($isauth)
     function logout() {
@@ -12,11 +13,13 @@ export default function LogOut() {
             isauth: false,
             user: null
         })
+        setmobileveiw(false)
         localStorage.removeItem('userslogined')
         navigate('/')
         toast(`You Loged Out Successfully`)
+
     }
     return (
-        <button className='logout btn btn-light ' onClick={logout} style={{color:"orangered"}} > Log out</button>
+        <button className={`logout btn btn-light  ${mobileveiw? '':'hide-logout'}`} onClick={logout} style={{color:"orangered"}} > Log out</button>
     )
 }

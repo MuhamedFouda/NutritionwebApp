@@ -38,7 +38,7 @@
     }
     h3{
         color: rgba(235, 77, 15, 0.747);
-        font-weight: 800;
+        font-weight: 400;
         letter-spacing: 1px;
     }
 
@@ -53,19 +53,19 @@
             flex-wrap: nowrap;
             align-items: flex-start;
             // margin-left: 30%;
-            background-image: url('../../../../assets/man-running-with-white-background-black-shorts-that-says-nike-it_873925-12013.avif');
+            background-image: url('../../../../assets/form2.jpg');
             background-color: transparent;
-            background-size: cover;
-            background-position:7rem;
+            background-size: contain;
+            background-position:15rem;
             background-repeat: no-repeat;
-            object-fit: cover;
+            // object-fit: cover;
             background-color: white;
-            border: 3px solid rgb(240, 233, 230);
+            border: 3px solid rgb(251, 170, 135);
             
     
             @media only screen and (max-width: 768px) {
                 width: 90%;
-                background-position:2rem;
+                background-position:10rem;
     
             }
             .form-control{
@@ -81,6 +81,7 @@
             button{
                 background-color: rgba(249, 166, 65, 0.881);;
                 color: white;
+                width: 15rem;
             }
         }
     

@@ -1,5 +1,16 @@
 .logout {
     @media only screen and (max-width: 768px) {
         width: 5.8rem;
+        position: absolute;
+        bottom: 0;
+        right: 10rem;
+
+    }
+
+}
+.hide-logout{
+    @media only screen and (max-width: 840px) {
+        display: none;
+        transition: .1s;
     }
 }

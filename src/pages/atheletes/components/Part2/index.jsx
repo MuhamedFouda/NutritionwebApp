@@ -19,7 +19,6 @@ export default function Part2() {
             <div className='photo animate__animated animate__backInRight'style={{ animationDuration: "6s"}}>
                 <img src={require('../../../../Assetss/WhatsApp Image 2024-03-20 at 23.35.59_077c3689.jpg')}/>
                 <img src={require('../../../../Assetss/WhatsApp Image 2024-03-20 at 23.35.59_234ca75c.jpg')}/>
-                <img src={require('../../../../Assetss/WhatsApp Image 2024-03-20 at 23.35.59_b76220bb.jpg')}/>
             </div>
         </div>
     )
