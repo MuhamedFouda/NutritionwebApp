@@ -35,47 +35,47 @@ export default function Login() {
   // }
 
 
-  // function handelogin(values){
-  //   const user=JSON.parse(localStorage.getItem('users'))
-  //   if(user.email===values.email&&user.password==values.password){
-  //     setuserauth({
-  //       isauth:true,
-  //       user:user
-  //     })
-  //     navigate('/')
-  //     axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
-  //           if(data.data.length){
-  //             toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
-  //             setuserauth({
-  //               isauth:true,
-  //               user:data.data[0]
-  //             })
-  //             setisAdmin(data.data[0].role)
-  //             localStorage.setItem("userslogined",JSON.stringify(data.data))
-  //             navigate('/')
-  //           }
-  //         })
-  //       }else{
-  //         toast.error("Wrong Email or Password")
-  //       }    }
+  function handelogin(values){
+    const user=JSON.parse(localStorage.getItem('users'))
+    if(user.email===values.email&&user.password==values.password){
+      setuserauth({
+        isauth:true,
+        user:user
+      })
+      navigate('/')
+      axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
+            if(data.data.length){
+              toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
+              setuserauth({
+                isauth:true,
+                user:data.data[0]
+              })
+              setisAdmin(data.data[0].role)
+              localStorage.setItem("userslogined",JSON.stringify(data.data))
+              navigate('/')
+            }
+          })
+        }else{
+          toast.error("Wrong Email or Password")
+        }    }
 
 
-function handelogin(values){
-    axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
-      if(data.data.length){
-        toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
-        setuserauth({
-          isauth:true,
-          user:data.data[0]
-        })
-        setisAdmin(data.data[0].role)
-        localStorage.setItem("userslogined",JSON.stringify(data.data))
-        navigate('/')
-      }else{
-        toast.error("Wrong Email or Password")
-      }
-    })
-}
+// function handelogin(values){
+//     axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data)=>{
+//       if(data.data.length){
+//         toast.success(`You Signed Successfully Welcome ${data.data[0].name} !`)
+//         setuserauth({
+//           isauth:true,
+//           user:data.data[0]
+//         })
+//         setisAdmin(data.data[0].role)
+//         localStorage.setItem("userslogined",JSON.stringify(data.data))
+//         navigate('/')
+//       }else{
+//         toast.error("Wrong Email or Password")
+//       }
+//     })
+// }
 
   // function handelogin(values) {
   //   axios.get(`http://localhost:3000/Users?email=${values.email}&password=${values.password}`).then((data) => {
